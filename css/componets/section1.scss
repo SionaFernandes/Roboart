@@ -1,0 +1,13 @@
+.section1 {
+  height: 100vh;
+  width: 100%;
+  color: $white;
+  @include bg-img($section1-bg, top center, cover, no-repeat);
+  .top-img {
+    width: 100px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+}
