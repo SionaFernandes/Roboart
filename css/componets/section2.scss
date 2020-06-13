@@ -1,4 +1,28 @@
 .section2 {
   padding: 110px 0px;
   background-color: $blue-dark;
+  .rotate-img {
+    position: absolute;
+    top: -30px;
+    opacity: 0.3;
+    animation: rotation 30s infinite linear;
+    img {
+      width: 100%;
+    }
+  }
+  .section2-img {
+    img {
+      width: 100%;
+    }
+  }
+
+  .section2-content {
+    background-color: $primary;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px 20px 40px;
+    border-radius: 4px;
+    .support-services {
+      margin-bottom: 40px;
+    }
+  }
 }
