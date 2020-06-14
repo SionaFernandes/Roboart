@@ -5,6 +5,12 @@ header {
     .nav-link {
       padding: 40px 15px;
       text-transform: capitalize;
+      &:hover {
+        text-decoration: underline !important;
+        -webkit-text-underline-position: under;
+        -ms-text-underline-position: below;
+        text-underline-position: under;
+      }
     }
   }
 }

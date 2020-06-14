@@ -1,7 +1,51 @@
-@mixin bg-img($url, $position, $size, $repeat) {
+@mixin bg-img-hero($url, $position, $size, $repeat) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url($url);
   background-position: $position;
   background-size: $size;
   background-repeat: $repeat;
+}
+
+@mixin bg-img-fixed($url, $position, $size, $repeat, $attachment) {
+  background-image: url($url);
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+  background-attachment: $attachment;
+  &::after {
+    position: absolute;
+    content: "";
+    background: rgba(10, 24, 40, 0.4) none repeat scroll 0 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
+@mixin bg-img-counter($url, $position, $size, $repeat, $attachment) {
+  background-image: url($url);
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+  background-attachment: $attachment;
+  &::after {
+    position: absolute;
+    content: "";
+    background: $primary;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.98;
+  }
+}
+
+// For Media Queries
+
+@mixin maxWidth($maxWidth) {
+  @media screen and (max-width: $maxWidth) {
+    @content;
+  }
 }

@@ -3,13 +3,15 @@
   width: 100%;
   color: $white;
   padding-top: 130px;
-  @include bg-img($section1-bg, top center, cover, no-repeat);
+  p {
+    color: $grey-light;
+  }
+  @include bg-img-hero($section1-bg, top center, cover, no-repeat);
   .top-img {
     width: 100px;
     margin: 0 auto;
     animation: bounce 3s infinite ease-in-out;
-    img {
-      width: 100%;
-    }
+   
   }
+ 
 }

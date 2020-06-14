@@ -1,0 +1,10 @@
+.section3 {
+  position: relative;
+  z-index: 1;
+  @include bg-img-fixed($bg-left, center, cover, no-repeat, fixed);
+  .section3-img {
+    width: 100%;
+    animation: bounce 3s infinite ease-in-out;
+  }
+
+}

@@ -1,0 +1,9 @@
+.section4 {
+  position: relative;
+  z-index: 1;
+  @include bg-img-fixed($bg-right, center, cover, no-repeat, fixed);
+  .section4-img {
+    width: 100%;
+    animation: bounce 3s infinite ease-in-out;
+  }
+}
