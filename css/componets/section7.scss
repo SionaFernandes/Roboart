@@ -1,0 +1,30 @@
+.section7 {
+  #myTab {
+    margin-right: 60px;
+    .nav-item {
+      flex: 1;
+      .nav-link {
+        padding: 30px 20px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        border: solid 1px transparent;
+        &.active {
+          background-color: $primary;
+        }
+        &:hover {
+          color: inherit;
+          border: solid 1px;
+          border-color: #eee #eee $grey-light;
+        }
+      }
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      h3 {
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+  }
+}

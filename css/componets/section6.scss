@@ -1,5 +1,6 @@
 .section6 {
   position: relative;
+  z-index: 1;
   @include bg-img-counter($counter-img, center, cover, no-repeat, fixed);
   border: 1px solid $grey-dark;
   .counter-info {
