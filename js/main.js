@@ -23,7 +23,12 @@ counters.forEach((counter) => {
 });
 
 //swiper
-var mySwiper = new Swiper(".swiper-container", {
+var mySwiper = new Swiper(".swiper-container.by", {
   loop: true,
-  slidesPerView: 5,  
+  slidesPerView: 5,
+});
+var mySwiper = new Swiper(".swiper-container.testimonials", {
+  loop: true,
+  slidesPerView: 1.5,
+  centeredSlides: true,
 });

@@ -1,0 +1,29 @@
+.section10 {
+  position: relative;
+  z-index: 1;
+  @include bg-img-fixed($bg-right, center, cover, no-repeat, fixed);
+  .testimonial {
+    margin-top: 40px;
+    height: 100%;
+    .testiment {
+      padding: 40px 30px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      background-color: $primary;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 20%;
+        top: 100%;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $primary;
+      }
+    }
+    .client {
+    }
+  }
+}
