@@ -1,3 +1,15 @@
 .section9 {
   background-color: $primary;
+  .swiper-container {
+    width: 100%;
+    height: auto;
+    .swiper-slide {
+      a {
+        opacity: 0.8;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }

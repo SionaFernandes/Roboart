@@ -1,16 +1,12 @@
+//counter
 const counters = document.querySelectorAll(".counter");
-// const speed = 10; // The lower the slower
 
 counters.forEach((counter) => {
   const updateCount = () => {
     const target = +counter.getAttribute("data-target");
     const count = +counter.innerText;
 
-    // Lower inc to slow and higher to slow
-    // const inc = target / speed;
-    const inc =5;
-
-    // console.log(inc);
+    const inc = 5;
 
     //Check if target is reached
     if (count < target) {
@@ -24,4 +20,10 @@ counters.forEach((counter) => {
   };
 
   updateCount();
+});
+
+//swiper
+var mySwiper = new Swiper(".swiper-container", {
+  loop: true,
+  slidesPerView: 5,  
 });
