@@ -107,8 +107,16 @@
       transition: 0.4s;
     }
   }
+  &.news {
+    padding: 0;
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 .fixed-width {
   max-width: 400px;
   margin: 0 auto;
+  text-transform: capitalize;
 }

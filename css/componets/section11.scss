@@ -1,0 +1,5 @@
+.section11 {
+  position: relative;
+  z-index: 1;
+  @include bg-img-fixed($bg-left, center, cover, no-repeat, fixed);
+}
