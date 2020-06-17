@@ -31,4 +31,9 @@ var mySwiper = new Swiper(".swiper-container.testimonials", {
   loop: true,
   slidesPerView: 1.5,
   centeredSlides: true,
+  spaceBetween: 100,
+  pagination: {
+    el: ".swiper-pagination.testimonials",
+  },
 });
+

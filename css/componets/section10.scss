@@ -14,7 +14,7 @@
       &::after {
         content: "";
         position: absolute;
-        left: 20%;
+        left: 5%;
         top: 100%;
         width: 0;
         height: 0;
@@ -22,8 +22,29 @@
         border-right: 20px solid transparent;
         border-top: 20px solid $primary;
       }
+      .fa-star {
+        color: $yellow;
+      }
     }
     .client {
+      .client-img {
+        max-width: 80px;
+        height: auto;
+        border-radius: 50px;
+        margin-right: 20px;
+      }
+      .client-info {
+        h4 {
+          font-size: 14px;
+        }
+      }
     }
+  }
+  .swiper-pagination-bullet {
+    background-color: $grey-light;
+  }
+  .swiper-pagination-bullet-active {
+    width: 30px;
+    border-radius: 3px;
   }
 }
