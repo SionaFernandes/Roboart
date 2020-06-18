@@ -18,6 +18,9 @@
         }
       }
     }
+    @include maxWidth(768px) {
+      margin: 0;
+    }
   }
   .tab-content {
     .tab-pane {

@@ -1,10 +1,25 @@
 header {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: auto;
+  z-index: 999;
+  @include maxWidth(767px) {
+    background-color: $primary;
+  }
   nav {
+    .navbar-collapse {
+      @include maxWidth(767px) {
+        padding: 30px 10px;
+      }
+    }
     .nav-link {
       padding: 40px 15px;
       text-transform: capitalize;
+      @include maxWidth(767px) {
+        padding: 10px;
+      }
       &:hover {
         text-decoration: underline !important;
         -webkit-text-underline-position: under;

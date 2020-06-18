@@ -25,15 +25,28 @@ counters.forEach((counter) => {
 //swiper
 var mySwiper = new Swiper(".swiper-container.by", {
   loop: true,
-  slidesPerView: 5,
+  slidesPerView: 1.2,
+  breakpoints: {
+    // when window width is >= 640px
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 40,
+    },
+  },
 });
 var mySwiper = new Swiper(".swiper-container.testimonials", {
   loop: true,
-  slidesPerView: 1.5,
+  slidesPerView: 1,
   centeredSlides: true,
   spaceBetween: 100,
   pagination: {
     el: ".swiper-pagination.testimonials",
   },
+  breakpoints: {
+    // when window width is >= 640px
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 40,
+    },
+  },
 });
-
