@@ -6,6 +6,9 @@
     top: -30px;
     opacity: 0.3;
     animation: rotation 30s infinite linear;
+    @include maxWidth(768px) {
+      animation: none;
+    }
   }
   .section2-img {
     position: relative;
